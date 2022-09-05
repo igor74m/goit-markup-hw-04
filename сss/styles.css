@@ -299,38 +299,41 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.container-social-link {
-  width: 206px;
-  height: 44px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
+
 .social-list {
-  display: flex;
-}
-.social-item {
-  color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc((100%-30px) / 4);
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.social-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
 }
 
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--background-color);
 }
 
 .social-icon {
   fill: var(--social-links-color);
 }
-.social-icon:hover {
-  fill: currentColor;
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--background-color);
 }
 
 /* постійні клієнти */
@@ -367,6 +370,8 @@ body {
   display: flex;
 }
 .container-adress {
+  width: 231px;
+  margin-left: 44px;
 }
 .page-footer .page-logo {
   display: inline-block;
@@ -397,8 +402,7 @@ body {
 .container-footer-social-link {
   width: 206px;
   height: 80px;
-  /* margin-top: 75px;
-  margin-bottom: 97px; */
+  margin-left: 70px;
 }
 .social-link-text {
   color: var(--background-color);
@@ -407,6 +411,29 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icon-footer {
+  fill: var(--background-color);
+}
+.social-item-footer:hover,
+.social-item-footer:focus {
+  background-color: var(--accent-color);
 }
 
 /* стилі портфоліо */
