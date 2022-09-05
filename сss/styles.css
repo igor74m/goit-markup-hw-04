@@ -53,20 +53,20 @@ body {
   background-color: var(--background-color);
 }
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
 }
 .section-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
 }
 /* капелюх сайту */
 .section {
@@ -130,7 +130,7 @@ body {
 
 .contact-list {
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -168,8 +168,9 @@ body {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  outline: 1px solid rgba(0, 0, 0, 1);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
+  padding: 200px 0;
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
     url(../images/hero.imj/imj14.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
@@ -178,12 +179,12 @@ body {
   text-align: center;
 }
 .hero-title {
-  color: var(--background-color);
   width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
+  color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -228,11 +229,13 @@ body {
 .about-item {
   width: 270px;
 }
+.wrapper {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .about-item:not(:last-child) {
   margin-right: 30px;
-}
-.icon-group {
-  margin-bottom: 30px;
 }
 
 .section-title {
@@ -318,8 +321,8 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background-color: var(--background-color);
+  border-radius: 50%;
 }
 
 .social-icon {
@@ -348,23 +351,24 @@ body {
 }
 .clients-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: center;
-  align-items: center;
 }
 
 /* підвал сайту */
 .page-footer {
-  background-color: var(--footer-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
   max-width: 1600px;
   height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
+
+  background-color: var(--footer-color);
 }
 .container-footer {
   display: flex;
@@ -405,13 +409,13 @@ body {
   margin-left: 70px;
 }
 .social-link-text {
+  margin-bottom: 20px;
   color: var(--background-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 .social-list-footer {
   display: flex;
@@ -425,8 +429,8 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 .social-icon-footer {
   fill: var(--background-color);
@@ -447,8 +451,9 @@ body {
   margin-left: 8px;
 }
 .filter-list .filter-btn {
-  padding: 6px 22px;
   height: 38px;
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -486,9 +491,19 @@ body {
   margin-bottom: 0;
 }
 /* картки */
+
 .card-item {
   width: 370px;
   height: 404px;
+}
+.card-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container-card {
   padding: 20px 24px;
