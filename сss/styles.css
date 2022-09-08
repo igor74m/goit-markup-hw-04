@@ -371,11 +371,6 @@ body {
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
-  /* border: var(--accent-color); */
-}
-
-.clients-link:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* підвал сайту */
